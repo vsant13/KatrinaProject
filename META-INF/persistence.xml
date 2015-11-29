@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MercadoFinaceiroPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entity.Rentabilidade</class>
+    <class>entity.PrecoTaxa</class>
+    <class>entity.Especi</class>
+    <class>entity.Titulos</class>
+    <class>entity.ProxVersao.DfpComposicaoCapitalSocial</class>
+    <class>entity.ProxVersao.TesPrecoTaxa</class>
+    <class>entity.ProxVersao.Tpmerc</class>
+    <class>entity.ProxVersao.Codbdi</class>
+    <class>entity.ProxVersao.PapelDeDesconhecido</class>
+    <class>entity.ProxVersao.PapelBovespa</class>
+    <class>entity.ProxVersao.Indopc</class>
+    <class>entity.ProxVersao.DfpProventos</class>
+    <class>entity.ProxVersao.ControleArquivosInseridos</class>
+    <class>entity.ProxVersao.ItrConta</class>
+    <class>entity.ProxVersao.TesTitulos</class>
+    <class>entity.ProxVersao.ItrComposicaoCapitalSocial</class>
+    <class>entity.ProxVersao.ItrProventos</class>
+    <class>entity.ProxVersao.TesRentabilidade</class>
+    <class>entity.ProxVersao.DfpConta</class>
+    <shared-cache-mode>ALL</shared-cache-mode>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mercadofinanceiro"/>
+      <property name="javax.persistence.jdbc.password" value="mysql"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
